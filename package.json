@@ -1,5 +1,5 @@
 {
-  "name": "Vue Component",
+  "name": "language-vue-component",
   "version": "0.1.0",
   "description": "Adds syntax highlighting to Vue Component files in Atom.",
   "license": "MIT",
