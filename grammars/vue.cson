@@ -162,9 +162,9 @@
         'beginCaptures': '1': 'name': 'punctuation.definition.tag.html'
       }
     ]
-    'begin': '(?:^\s+)?(<)((?i:template))\b(?=[^>]*lang="jade")'
+    'begin': '(?:^\\s+)?(<)((?i:template))\\b(?=[^>]*lang="jade")'
     'name': 'source.jade.embedded.html'
-    'end': '(</)((?i:template))(>)(?:\s*\n)?'
+    'end': '(</)((?i:template))(>)(?:\\s*\\n)?'
   }
   {
     'endCaptures': '2': 'name': 'punctuation.definition.tag.html'
