@@ -158,7 +158,7 @@
       {
         'patterns': [ { 'include': 'source.jade' } ]
         'begin': '(>)'
-        'end': '(?=</(?i:style))'
+        'end': '(?=</(?i:template))'
         'beginCaptures': '1': 'name': 'punctuation.definition.tag.html'
       }
     ]
