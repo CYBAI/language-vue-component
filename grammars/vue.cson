@@ -87,7 +87,7 @@
         'beginCaptures': '1': 'name': 'punctuation.definition.tag.html'
       }
     ]
-    'begin': '(?:^\\s+)?(<)((?i:style))\\b(?=[^>]*lang="stylus")'
+    'begin': '(?:^\\s+)?(<)((?i:style))\\b(?=[^>]*lang=["|\']stylus["|\'])'
     'name': 'source.stylus.embedded.html'
     'end': '(</)((?i:style))(>)(?:\\s*\\n)?'
   }
@@ -105,7 +105,7 @@
         'beginCaptures': '1': 'name': 'punctuation.definition.tag.html'
       }
     ]
-    'begin': '(?:^\\s+)?(<)((?i:style))\\b(?=[^>]*lang="(?:sass|scss)")'
+    'begin': '(?:^\\s+)?(<)((?i:style))\\b(?=[^>]*lang=["|\'](?:sass|scss)["|\'])'
     'name': 'source.sass.embedded.html'
     'end': '(</)((?i:style))(>)(?:\\s*\\n)?'
   }
@@ -123,7 +123,7 @@
         'beginCaptures': '1': 'name': 'punctuation.definition.tag.html'
       }
     ]
-    'begin': '(?:^\\s+)?(<)((?i:style))\\b(?=[^>]*lang="less")'
+    'begin': '(?:^\\s+)?(<)((?i:style))\\b(?=[^>]*lang=["|\']less["|\'])'
     'name': 'source.less.embedded.html'
     'end': '(</)((?i:style))(>)(?:\\s*\\n)?'
   }
@@ -158,11 +158,11 @@
       {
         'patterns': [ { 'include': 'source.jade' } ]
         'begin': '(>)'
-        'end': '(?=</(?i:style))'
+        'end': '(?=</(?i:template))'
         'beginCaptures': '1': 'name': 'punctuation.definition.tag.html'
       }
     ]
-    'begin': '(?:^\\s+)?(<)((?i:template))\\b(?=[^>]*lang="jade")'
+    'begin': '(?:^\\s+)?(<)((?i:template))\\b(?=[^>]*lang=["|\']jade["|\'])'
     'name': 'source.jade.embedded.html'
     'end': '(</)((?i:template))(>)(?:\\s*\\n)?'
   }
@@ -182,7 +182,7 @@
     'beginCaptures':
       '1': 'name': 'punctuation.definition.tag.html'
       '2': 'name': 'entity.name.tag.script.html'
-    'begin': '(?:^\\s+)?(<)((?i:script))\\b(?=[^>]*lang="coffee")'
+    'begin': '(?:^\\s+)?(<)((?i:script))\\b(?=[^>]*lang=["|\']coffee["|\'])'
     'name': 'source.coffee.embedded.html'
     'end': '(?<=</(script|SCRIPT))(>)(?:\\s*\\n)?'
   }
