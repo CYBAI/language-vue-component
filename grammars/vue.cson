@@ -2,6 +2,8 @@
 'scopeName': 'text.html.basic'
 'fileTypes': [
   'vue'
+  'vue.html'
+  'html'
 ]
 'firstLineMatch': '&lt;!(?i:DOCTYPE)|&lt;(?i:html)|&lt;\?(?i:php)'
 'foldingStartMarker': '(?x)
