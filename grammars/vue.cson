@@ -5,7 +5,7 @@
   'vue.html'
   'html'
 ]
-'firstLineMatch': '<!(?i:DOCTYPE)|<(?i:html)|<\?(?i:php)'
+'firstLineMatch': '<!(?i:DOCTYPE)|<(?i:html)|<\\?(?i:php)'
 'foldingStartMarker': '(?x)(<(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|li|form|dl)\b.*?><!--(?!.*--\s*>)^<!--\ \#tminclude\ (?>.*?-->)$<\?(?:php)?.*\b(if|for(each)?|while)\b.+:\{\{?(if|foreach|capture|literal|foreach|php|section|strip)\{\s*($|\?>\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/))))'
 'foldingStopMarker': '(?x)(</(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|li|form|dl)>^(?!.*?<!--).*?--\s*>^<!--\ end\ tminclude\ -->$<\?(?:php)?.*\bend(if|for(each)?|while)\b\{\{?/(if|foreach|capture|literal|foreach|php|section|strip)^[^{]*\})'
 'keyEquivalent': '^~H'
