@@ -86,14 +86,14 @@
     'patterns': [
       { 'include': '#tag-stuff' }
       {
-        'patterns': [ { 'include': 'text.jade' } ]
+        'patterns': [ { 'include': 'source.jade' } ]
         'begin': '(>)'
         'end': '(?=</(?i:template))'
         'beginCaptures': '1': 'name': 'punctuation.definition.tag.end.html'
       }
     ]
     'begin': '(?:^\\s+)?(<)((?i:template))\\b(?=[^>]*lang="jade")'
-    'name': 'text.jade.embedded.html'
+    'name': 'source.vue-jade.embedded.html'
     'end': '(</)((?i:template))(>)(?:\\s*\\n)?'
   }
   {
