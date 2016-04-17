@@ -127,8 +127,26 @@
         'beginCaptures': '1': 'name': 'punctuation.definition.tag.end.html'
       }
     ]
-    'begin': '(?:^\\s+)?(<)((?i:style))\\b(?=[^>]*lang="(?:s(a|c)ss)")'
+    'begin': '(?:^\\s+)?(<)((?i:style))\\b(?=[^>]*lang="(?:sass)")'
     'name': 'source.sass.embedded.html'
+    'end': '(</)((?i:style))(>)(?:\\s*\\n)?'
+  }
+  {
+    'captures':
+      '1': 'name': 'punctuation.definition.tag.begin.html'
+      '2': 'name': 'entity.name.tag.style.html'
+      '3': 'name': 'punctuation.definition.tag.html'
+    'patterns': [
+      { 'include': '#tag-stuff' }
+      {
+        'patterns': [ { 'include': 'source.css.scss' } ]
+        'begin': '(>)'
+        'end': '(?=</(?i:style))'
+        'beginCaptures': '1': 'name': 'punctuation.definition.tag.end.html'
+      }
+    ]
+    'begin': '(?:^\\s+)?(<)((?i:style))\\b(?=[^>]*lang="(?:scss)")'
+    'name': 'source.css.scss.embedded.html'
     'end': '(</)((?i:style))(>)(?:\\s*\\n)?'
   }
   {
